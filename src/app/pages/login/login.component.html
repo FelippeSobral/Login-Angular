@@ -1,1 +1,17 @@
-<app-default-login-layout></app-default-login-layout>
+<app-default-login-layout
+  title = "Login into your account"
+  primaryBtnText="Login now"
+  secondaryBtnText="Signup Now"
+>
+
+<form [formGroup] = "loginForm">
+  <app-primary-input
+  formControlName="email"
+  inputName="email"
+  type="email"
+  label="Email"
+  placeholder="johndoe@gmail.com"></app-primary-input>
+</form>
+
+
+</app-default-login-layout>
